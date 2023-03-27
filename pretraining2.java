@@ -308,7 +308,7 @@ logical OR||ternary?:assignment=+=-=*=/=%=&=^=
 
   // Java OR Operator Example: Logical || and Bitwese |:
 
-  // The logical Operator || doesn'tcheck the second condition if the first
+  // The logical Operator || doesn't check the second condition if the first
   // condition is true. It checks the second condition only if the first one is
   // false. The bitwise | operator always checks both conditions first.
 
