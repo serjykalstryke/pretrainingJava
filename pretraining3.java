@@ -28,3 +28,8 @@ str1 = str1.concat(" is cool");
 // Unique properties of Strings in Java
 
 // Strings are crucial in Java and also are frequently used by Java programmers. It is important that the Java developers have a good knowledge about the String class and its methods. The String class is immutable, which means that once a String object is created, it cannot be changed. The String class has a lot of methods that can be used to perform operations on Strings. The String class is a final class, which means that it cannot be inherited. The String class implements the Serializable and Comparable interfaces.
+
+// Strings do not use any null character for termination: The String does not use any null character for termination. On the contrary, strings and objects are backed by the character array. Programmers can use the character array to represent a String in Java. They can do this by using toCharArray() method of java.lang.String class of JDK.
+
+// Strings are not modifiable: One thing Java programmers must be aware of is that Strings are immutable, which means that once the programmer creates a string, it cannot be modified. If the programmer tries to modify the content of the string, then it will create a new String. In other words, Strings do not allow inclusions of new content into the existing String and they also cannot override the functionality of an existing string
+
