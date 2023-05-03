@@ -308,7 +308,7 @@ logical OR||ternary?:assignment=+=-=*=/=%=&=^=
 
   // Java OR Operator Example: Logical || and Bitwese |:
 
-  // The logical Operator || doesn't check the second condition if the first
+  // The logical Operator || doesn'tcheck the second condition if the first
   // condition is true. It checks the second condition only if the first one is
   // false. The bitwise | operator always checks both conditions first.
 
@@ -327,4 +327,121 @@ logical OR||ternary?:assignment=+=-=*=/=%=&=^=
       System.out.println(a > b | a++ < c);// true | true = true
       System.out.println(a);// 11 because second condition is checked
     }
-}
+  }
+
+  // Java Ternary Operator
+
+  // The ternary operator is used as a one line replacement for if-then-else
+  // statements and is used a lot in Java programming. it is the only conditional
+  // operator that takes three operands. The syntax of the ternary operator is:
+
+  public class OperatorExample {
+  public stating void main(String args[]) {
+    int a=2;
+    int b=5;
+    int min=(a<b)?a:b;
+    System.out.println(min);
+  }
+  }
+
+  // String Basics
+
+  // Learning Objextives for the String Basics Topic
+
+  // Discuss the String class
+  // Successfully execute a Java program that demonstrates different operations on
+  // Strings using the String API.
+
+  // Description for the String Basics topic.
+
+  // Strings are a commonly used reference type in java to hold multiple
+  // characters (text).
+
+  // In Java, Strings are NOT primitives - they are immutable, constant objects
+  // derived from the String class. To be immutable means that the state or value
+  // of the object cannot be altered once created - this is accomplished by having
+  // internal, private and final fields and not implementing any "setter" methods
+  // which would alter the state of those fields.
+
+  // Because Strings are immutable, all of the methods in the String class return
+  // a new String - the original is not modified. For example:
+
+  String str1 = " my string";
+
+  str1.concat(" is the best!")System.out.println(str1);
+
+  // The output of this code is "my string" - the original String is not modified.
+
+  // Unique Properties of Strings in Java
+  // Strings are very crucial in Java and also are very frequently used by Java
+  // programmers. It is important that the Java developers have a good knowledge
+  // about the String class, in order to used them effectively. In this article,
+  // we will be focusing on some of the important topics about Java Strings.
+
+  // Strings dot not use any null character for termination.
+
+  // Strings does not use any null character for termination. Strings are backed
+  // by the character array. Programmers can use the character array to represent
+  // a String in the Java programming language. The can do this by using the
+  // toCharArray() method. The toCharArray() method of java.long.String class
+  // converts this string into a new character array. The following example shows
+  // how to use the toCharArray() method to convert a String into a character
+  // array.
+
+  public class StringExample {
+    public static void main(String args[]) {
+      String str = "Hello World";
+      char[] ch = str.toCharArray();
+      for (int i = 0; i < ch.length; i++) {
+        System.out.print(ch[i]);
+      }
+    }
+  }
+
+  // Strings are not modifiable
+
+  // One thing Java programmers must be aware of is that Strings are immutable,
+  // which means that once the programmer creates a string, it cannot be modified.
+  // If the programmer tries to modiy the content of a string, a new string is
+  // created. The following example shows how to modify a string.
+
+  public class StringExample {
+    public static void main(String args[]) {
+      String str = "Hello World";
+      str = str + "!!!";
+      System.out.println(str);
+    }
+  }
+
+// Strings are placed in the String Pool
+
+// Strings are maintained in a special area of the heap called the String Pool.
+// The String Pool is a special area of the heap where all the String objects
+// are placed. The String Pool is used to store all the String objects that are
+// created using the literal notation. The following example shows how to create
+// a String object using the literal notation.
+
+// Comparison of Strings is done using equals method
+
+// For comparing two Strings, String class uses equals() method instead of
+// equality operator. String class overrides the equal method and offers content
+// equality which basically uses characters, case, and order.
+
+// To full utilize the String class, we need to understand the methods that come
+// with a string object. We will take a look at a small example for each of the
+// methods below:
+
+toUpperCase() - Converts a string to upper case letters
+toLowerCase() - Converts a string to lower case letters
+
+charAt(int index) - Returns the character at the specified index (position)
+
+concat(String s) - Concatenates a specified string to the end of the string
+
+equals(String s) - Compares two strings. Returns true if the strings are equal, and false if not
+
+equalsIgnoreCase(String s) - Compares two strings, ignoring case considerations
+length() - Returns the length of a specified string
+
+replace(char old, char new) - Searches a string for a specified value, and returns a new string where the specified values are replaced
+trim() - Removes whitespace from both ends of a string
